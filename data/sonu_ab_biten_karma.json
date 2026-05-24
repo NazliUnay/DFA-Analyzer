@@ -1,0 +1,11 @@
+{
+  "states": ["baslangic", "a_geldi", "ab_geldi"],
+  "alphabet": ["a", "b"],
+  "start_state": "baslangic",
+  "accept_states": ["ab_geldi"],
+  "transitions": {
+    "baslangic": { "a": "a_geldi", "b": "baslangic" },
+    "a_geldi": { "a": "a_geldi", "b": "ab_geldi" },
+    "ab_geldi": { "a": "a_geldi", "b": "baslangic" }
+  }
+}

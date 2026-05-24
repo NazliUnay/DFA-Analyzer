@@ -1,0 +1,10 @@
+{
+  "states": ["ciftA", "tekA"],
+  "alphabet": ["a", "b"],
+  "start_state": "ciftA",
+  "accept_states": ["ciftA"],
+  "transitions": {
+    "ciftA": { "a": "tekA", "b": "ciftA" },
+    "tekA": { "a": "ciftA", "b": "tekA" }
+  }
+}

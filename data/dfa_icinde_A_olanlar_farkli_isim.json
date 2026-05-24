@@ -1,0 +1,10 @@
+{
+  "states": ["x", "y"],
+  "alphabet": ["a", "b"],
+  "start_state": "x",
+  "accept_states": ["y"],
+  "transitions": {
+    "x": { "a": "y", "b": "x" },
+    "y": { "a": "y", "b": "y" }
+  }
+}

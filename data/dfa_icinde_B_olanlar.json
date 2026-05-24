@@ -1,0 +1,10 @@
+{
+  "states": ["p0", "p1"],
+  "alphabet": ["a", "b"],
+  "start_state": "p0",
+  "accept_states": ["p1"],
+  "transitions": {
+    "p0": { "a": "p0", "b": "p1" },
+    "p1": { "a": "p1", "b": "p1" }
+  }
+}

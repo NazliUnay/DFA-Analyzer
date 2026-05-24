@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DFA Çakışma ve Eşdeğerlik Denetleyici</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+</head>
+<body>
+    <div class="container" style="max-width: 900px;"> <h1>DFA Analiz Aracı</h1>
+        
+        <div class="upload-section">
+            <div class="file-box">
+                <label>1. DFA Dosyası (JSON):</label>
+                <input type="file" id="dfa1-file" accept=".json">
+            </div>
+            <div class="file-box">
+                <label>2. DFA Dosyası (JSON):</label>
+                <input type="file" id="dfa2-file" accept=".json">
+            </div>
+        </div>
+
+        <div class="actions">
+            <button id="btn-intersect">Kesişimi Kontrol Et</button>
+            <button id="btn-equiv">Eşdeğerliği Kontrol Et</button>
+        </div>
+
+        <div id="result-box" class="result">
+            Sonuçlar burada gösterilecek...
+        </div>
+
+        <div class="graph-section">
+            <div class="graph-box">
+                <h3>DFA 1 Görünümü</h3>
+                <div id="dfa1-network" class="network-container"></div>
+            </div>
+            <div class="graph-box">
+                <h3>DFA 2 Görünümü</h3>
+                <div id="dfa2-network" class="network-container"></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="../src/app.js"></script>
+</body>
+</html>

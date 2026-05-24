@@ -131,7 +131,7 @@ class DFAAnalyzer {
 
             // Durumlardan biri kabul, diğeri ret ise eşdeğerlik bozulur!
             if (isAccept1 !== isAccept2) {
-                steps.push(`&nbsp;&nbsp;&nbsp;&nbsp;<span class='error-text'>💥 ÇELİŞKİ YAKALANDI! Otomatlardan biri bu kelimeyi kabul ederken diğeri etmiyor. Eşdeğerlik bozuldu.</span>`);
+                steps.push(`&nbsp;&nbsp;&nbsp;&nbsp;<span class='error-text'> ÇELİŞKİ YAKALANDI! Otomatlardan biri bu kelimeyi kabul ederken diğeri etmiyor. Eşdeğerlik bozuldu.</span>`);
                 return {
                     isEquivalent: false,
                     counterexample: path === "" ? "λ (Boş Kelime)" : path,

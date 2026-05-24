@@ -1,8 +1,9 @@
 # DFA Çakışma ve Eşdeğerlik Denetleyicisi (DFA Analyzer)
-
-![DFA Analiz Aracı Örnek Görünümü](gorsel_linkini_buraya_yaz.png)
-
 Bu proje, Biçimsel Diller ve Otomata teorisi kapsamında geliştirilmiş bir web uygulamasıdır. Kullanıcı tarafından JSON formatında yüklenen iki farklı Deterministik Sonlu Otomatın (DFA) birbirleriyle olan eşdeğerliğini ve çakışma (kesişim) durumlarını analiz eder.
+
+<p align="center">
+  <img src="https://github.com/NazliUnay/DFA-Analyzer/blob/main/ekran_goruntusu.png" alt="DFA Analiz Aracı Örnek Görünümü" width="800">
+</p>
 
 ## Özellikler
 - **Görselleştirme:** Vis.js kütüphanesi kullanılarak DFA'lar interaktif bir graf olarak çizdirilir.
@@ -10,7 +11,7 @@ Bu proje, Biçimsel Diller ve Otomata teorisi kapsamında geliştirilmiş bir we
 - **Eşdeğerlik Kontrolü:** İki DFA'nın tamamen aynı dili tanıyıp tanımadığını kontrol eder. Eşdeğerlik bozuluyorsa, kanıt olarak bir "karşı örnek" (counterexample) sunar.
 - **Adım Adım Loglama:** Algoritmanın çalışma adımlarını kullanıcıya detaylı bir şekilde gösterir.
 
-## Çalışma Mantığı (Algoritma)
+## Çalışma Mantığı 
 Proje, iki farklı DFA'yı analiz etmek için **Çarpım Otomatı (Product Automaton)** teorisini ve **Genişlik Öncelikli Arama (BFS)** algoritmasını kullanır.
 
 * **Kesişim Analizi:** Her iki otomat eşzamanlı olarak başlangıç durumlarından çalıştırılır. BFS matrisi üzerinde ilerlerken, iki otomatın da aynı anda "Kabul" durumunda olduğu bir eşleşme bulunursa, dillerin kesişiminin boş olmadığı kanıtlanır.
